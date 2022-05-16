@@ -1,0 +1,20 @@
+<div class="content">
+	<button (click)="goBack()">Go Back</button>
+	<div *ngIf="loaded">
+	  <h2>Photos for album №{{album.id}}</h2>
+    <input type="text" [(ngModel)]="title" (input) = "Search()">
+
+	  <ul *ngIf="photos.length">
+		<li *ngFor="let photo of photos">
+		  <span>{{photo.id}}) </span>
+		  <span>{{photo.title}} </span>
+		  <img src="{{photo.thumbnailUrl}}" width="30px">
+		</li>
+	  </ul>
+
+	</div>
+
+	<p *ngIf="!loaded">Loading album...</p>
+
+
+</div>

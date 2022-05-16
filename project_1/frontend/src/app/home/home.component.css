@@ -1,0 +1,16 @@
+img{
+  width: 100%;
+}
+.main-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 481px;
+}
+
+.text{
+  margin-top: -300px;
+  color: white;
+}

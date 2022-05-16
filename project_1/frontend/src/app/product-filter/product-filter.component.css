@@ -1,0 +1,29 @@
+a{
+  cursor: pointer;
+}
+a:hover{
+  color: #27bcda;
+}
+
+.main-content{
+  padding-bottom: 300px;
+}
+
+.goback{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px #333;
+  background-color: #94a5a773;
+  float: right;
+  margin-right: 200px;
+}
+
+button{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px #333;
+  background-color: #94a5a773;
+}
+button:hover{
+  background-color:  rgb(153, 144, 144);
+}

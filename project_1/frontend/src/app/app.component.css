@@ -1,0 +1,50 @@
+
+li {
+  float: right;
+  list-style: none;
+  margin-top: -46px;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+.login-form{
+  margin-top: 70px;
+  margin-left: 500px;
+}
+
+input{
+  border-radius: 5px;
+  border: solid 1px #333;
+  padding: 10px 60px;
+  text-align: center;
+  background-color: #94a5a773;
+  margin-top: 10px;
+  text-align: left;
+}
+
+button{
+  padding: 5px 10px;
+  margin: 40px 110px;
+  border: solid 1px #333;
+  background-color: #94a5a773;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: rgb(206, 197, 197);
+}
+
+

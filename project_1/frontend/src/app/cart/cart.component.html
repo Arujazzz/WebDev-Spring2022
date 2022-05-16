@@ -1,0 +1,87 @@
+<div class="main-content">
+  <!-- <div class="main-content">
+  <h3 class="category-name">Cart</h3>
+
+  <p>
+    <a routerLink="/shipping">Shipping Prices</a>
+  </p>
+
+  <div class="cart-item" *ngFor="let item of items">
+    <span>Name: {{ item.name }} </span>
+    <span>Price: {{ item.price | currency }}</span>
+    <button class="button" (click)="removeItem(item)">remove</button>
+  </div>
+
+  <button (click)="clear()">Clear</button>
+
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name"> Name </label>
+      <input id="name" type="text" formControlName="name" />
+    </div>
+
+    <div>
+      <label for="address"> Address </label>
+      <input id="address" type="text" formControlName="address" />
+    </div>
+
+    <button class="button" type="submit">Purchase</button>
+  </form>
+
+  <h3>Total Price: ${{totalPrice}} </h3>
+
+</div>
+ -->
+<ng-container class="isntempty" *ngIf="items.length != 0">
+  <div class="container">
+    <div class="cart-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Product Name</th>
+              <th>Product Image</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of items; let i = index">
+              <td> {{i+1}} </td>
+              <td> {{item.name}} </td>
+              <td> <img style='width: 120px;' src="{{item.image}}" > </td>
+              <td> {{item.description}} </td>
+              <td> {{item.price}} </td>
+              <td> <button (click)="removeItem(item)">Remove</button> </td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td> <button class="empty" (click)="clear()">Empty Cart</button></td>
+              <td><button routerLink="/products" class="btn btn-primary">Shop More</button></td>
+              <td><strong>Grand Total: ${{totalPrice}}</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container class="empty" *ngIf="items.length === 0">
+  <div class="container">
+    <div class="cart">
+      <h5 class="cart-title">My Cart</h5>
+    </div>
+    <div class="center">
+      <h4>Your cart is empty!</h4>
+      <h6>Add product to it now</h6>
+      <button routerLink="/products" class="btn btn-primary">Shop Now</button>
+    </div>
+  </div>
+</ng-container>
+<app-shipping></app-shipping>
+
+</div>
+

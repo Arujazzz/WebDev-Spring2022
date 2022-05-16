@@ -1,0 +1,16 @@
+<div class="main-content">
+
+  <div class="input-group">
+    <textarea  [(ngModel)]="createBody"></textarea>
+  </div>
+  <div>
+    <button class="btn btn-success" (click)="create()">Post</button>
+  </div>
+
+
+
+  <div *ngFor="let feedback of feedbacks">
+    <p>{{feedback.body}}</p>
+    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="deleteFeedback(feedback.id)">Delete</button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+li{
+  list-style: none;
+  display: inline;
+  margin-left: 280px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.top-bar {
+	list-style-type: none;
+	background-color: rgb(95, 105, 167);
+  padding: 9px;
+  margin-top: -8px;
+  margin-left: -16px;
+  width: 102%;
+}
+
+li a:hover{
+  background-color: rgb(27, 39, 114)
+}
+li a{
+  text-decoration: none;
+}

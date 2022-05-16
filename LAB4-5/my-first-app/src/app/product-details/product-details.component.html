@@ -1,0 +1,13 @@
+<div *ngIf="product">
+  <h2>Product Details</h2>
+  <div class="images">
+    <p><img *ngIf="product.image" src="{{product.image}}" [class.img] = "product"></p>
+    <p><img *ngIf="product.image2" src="{{product.image2}}" [class.img] = "product" ></p>
+    <p><img *ngIf="product.image3" src="{{product.image3}}" [class.img] = "product"></p>
+  </div>
+  <h3><a [title]="'Buy on Amazon'" href={{product.linkamazon}} target="_blank"> {{product.name}} </a></h3>
+  <p *ngIf="product.rating"> Rating: {{product.rating}}</p>
+  <p *ngIf="product.price">Price: ${{product.price}}</p>
+  <p>{{ product.description }}</p>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>

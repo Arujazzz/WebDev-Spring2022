@@ -1,0 +1,10 @@
+.main-content{
+  margin-top: 20px;
+  padding-bottom: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  width: 800px;
+}

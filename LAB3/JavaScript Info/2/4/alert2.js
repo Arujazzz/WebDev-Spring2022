@@ -1,0 +1,2 @@
+var planet;
+var visitor;

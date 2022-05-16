@@ -1,0 +1,51 @@
+<div class="main-content">
+<button class="goback" (click)="goBack()">Go Back</button>
+<div *ngFor="let product of products">
+  <h3>
+    <a [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{product.name}}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{product.description}}
+  </p>
+
+  <p>
+    <img class="product_image" *ngIf="product.image" src="{{product.image}}" [class.img]="product">
+  </p>
+
+  <p *ngIf="product.rating">
+    Rating: <span class="fa fa-star"></span> {{product.rating}}
+  </p>
+
+  <p *ngIf="product.price">
+    Price: ${{product.price}}
+  </p>
+
+  <div class="buttons-container">
+
+    <a [href] = "'https://telegram.me/share/url?url=' + product.link" target="_blank">
+      <button type="button" (click)="share()">
+      Share
+    </button></a>
+
+
+
+
+    <div class="button-box">
+      <app-product-alerts
+        [product]="product"
+        (notify)="onNotify()">
+      </app-product-alerts>
+    </div>
+  </div>
+</div>
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
+
+</div>

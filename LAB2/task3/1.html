@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Microsoft home page</title>
+
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+                cursor: pointer;
+            }
+
+            .micro-logo{
+                display: block;
+                width: 20%;
+                padding: 0px 75px;
+                display: block;                
+            }
+
+            .menu{
+                width:950px;
+                margin: 0 auto;
+                margin-top: 17px;
+            }
+
+            .menu::before{
+                content:'';
+                display: block;
+                height: 9px;
+                width: 100%;
+                position: absolute;
+            }
+
+            .menu ul{
+                margin-top: -40px;
+                padding: 0;
+                list-style: none;
+                height: 9px;
+            }
+            .menu ul li{
+                float: left;
+            }
+
+            .menu ul li a{
+                color: black;
+                display: block;
+                height: 9px;
+                padding: 0 10px;
+                font-size: 13px;
+                line-height: 13px;
+                text-decoration: none;
+            }
+
+            .menu ul li a:hover{
+                text-decoration: underline;
+            }
+            
+            .first-img, .phones{
+                width: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .description-1{
+                font-size: 24px;
+                line-height: 28px;
+                padding: 36px 144px 4px;
+                max-width: 750px;
+                font-weight: 600;
+                margin-top: -365px;
+                color: #fff;
+            }
+            .description-2{
+                font-size: 16px;
+                line-height: 20px;
+                padding: 36px 144px 4px;
+                max-width: 750px;
+                margin-top: -22px;
+                color: #fff;
+            }
+
+            .link-1{
+                display: flex;
+                position: absolute;
+                font-size: 16px;
+                color: black;
+                text-decoration: none;
+                font-weight: 500;
+                padding: 9px 17px;
+                margin-left: 144px;
+                margin-top: 16px;
+                max-width: 750px;
+                background-color: #fff;
+            }
+            .link-1:hover{
+                text-decoration: 2px underline;
+            }
+
+            .microsoft-365{
+                display: block;
+                margin-top: 237px;
+                margin-left: 67px;
+            }
+
+            .microsoft-edge{
+                display: block;
+                margin-top: -400px;
+                margin-left: 380px; 
+            }
+        
+            .micro-onedrive{
+                display: block;
+                margin-top: -319px;
+                margin-left: 692px;
+            }
+
+            .one-note{
+                display: block;
+                margin-top: -299px;
+                margin-left: 1003px;
+            }
+            
+            .descr-1{
+                display: block;
+                max-width: 180px;
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 21px;
+                font-family: Arial;
+                
+            }
+            .descr-2{
+                display: block;
+                max-width: 280px;
+                font-size: 15px;
+                margin-top: 3px;
+            }
+            .link-2{
+                text-decoration: none;
+                color: rgb(50, 108, 161);
+                font-weight: 500;
+            }
+            .link-2:hover{
+                text-decoration: 2px underline;
+            }
+            .link-2{
+                display: block;
+                margin-top: 10px;
+                margin-left: 3px;
+            }
+            .link-2-1{
+                display: block;
+                margin-top: 20px;
+            }
+
+            .ois-android{
+                display: block;
+                margin-top: 180px;
+            }
+
+            .description-1-2{
+                color: black;
+                margin-top: -330px;
+            }
+            .description-1-3{
+                color: black;
+            }
+            .link-1-2{
+                background-color: black;
+                color: #fff;
+            }
+
+            .for-business{
+                display: block;
+                margin-top: 270px;
+                margin-left: 67px;
+            }
+            .for-business h2{
+                font-weight: 500;
+            }
+            .descr-1-2{
+                max-width: 280px;
+            }
+            .teams{
+                display: block;
+                margin-top: 20px;
+            }
+            .micro365-for-bus{
+                display: block;
+                margin-top: -323px;
+                margin-left: 310px;
+            }
+            .visual-studio{
+                display: block;
+                margin-top: -319px;
+                margin-left: 623px;
+            }
+            .cloud-pc{
+                display: block;
+                margin-top: -299px;
+                margin-left: 936px;
+            }
+
+            .footer1{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                height: 50vh;
+                background-color: #f5f5f5;
+                margin-top: 80px;
+            }
+
+            
+            .footer2 ul{
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                cursor: pointer;
+                width: 900px;
+                margin-left: 500px;
+                margin-top: -35px;
+                
+            }
+            .lang li{
+                display: block;
+                list-style-type: none;
+                cursor: pointer;
+                width: 100px;
+                margin-left: 67px;
+                margin-top: -35px;
+                
+            }
+            .footer2 ul li{
+                padding: 0 10px;
+            }
+
+            .footer1 span{
+                display: block;
+                color: #707070;
+                font-weight: 500;
+                font-size: 15px;
+                margin-top: 40px;
+            }
+            .footer1 ul{
+                list-style-type: none;
+                width: 200px;        
+            }
+            .footer1 ul li a, .footer2 ul li a, .lang li a{
+                color: #707070;
+                font-size: 11px;
+                line-height: 35px;
+                text-decoration: none;
+                
+            }
+            .coloumn1{
+                display: block;
+                margin-left: 50px; 
+            }
+            
+            .footer1 ul li a:hover, .footer2 ul li a:hover, .lang li a:hover{
+                text-decoration: 1px underline;
+            }
+
+            .right-menu-img1, .right-menu-img2{
+                width: 30px;
+            }
+            .right-menu-img1{
+                display: block;
+                position: relative;
+                margin-top: -24px;
+                margin-left: 1235px;
+            }
+            .right-menu-img2{
+                display: block;
+                position: relative;
+                margin-top: -30px;
+                margin-left: 1185px;
+            }
+            button{
+                position: relative;
+                border: none;
+                max-width: 145px;
+                max-height: 25px;
+                top: -21px;
+                background-color: #fff;
+                margin-left: 1000px;
+            }
+            
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <a href=""> <img src="https://pngimg.com/uploads/microsoft/microsoft_PNG4.png" class="micro-logo"></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Office</a></li>
+                <li><a href="">Windows</a></li>
+                <li><a href="">Поддержка</a></li>
+            </ul>
+        </nav>
+       
+        <a href=""><img src="https://cdn-icons-png.flaticon.com/128/848/848043.png" class="right-menu-img1"></a>
+        <a href=""><img src="https://cdn-icons.flaticon.com/png/128/2414/premium/2414255.png?token=exp=1644451185~hmac=e7a66e4f7b2235ba71899404315ff037" class="right-menu-img2"></a>
+        <a href="" class="product-btn"><button >Продукты Майкрософт</button></a>
+
+
+        <div сlass="microsoft"> 
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLAmj?ver=35aa&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true" class="first-img">
+            <h3 class="description-1">Разработано для жизни — сегодня и в будущем</h3>
+            <p class="description-2">Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете еще ближе к тому, что успели полюбить.</p>
+            <a href="" class="link-1">Проверьте, готов ли ваш ПК </a>
+        </div>
+
+        <div class="product-for-home">
+
+            <div class="microsoft-365">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWPGs4?ver=3a6f&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+                <h3 class="descr-1">Microsoft 365</h3>
+                <p class="descr-2">Приложения Office премиум-класса, дополнительное облачное хранилище, продвинутые инструменты обеспечения безопасности и многое другое — все в одной удобной подписке.</p>
+                <p><a href="" class="link-2">До 6 человек</a></p>
+                <p><a href="" class="link-2 link-2-1">Для 1 человека</a></p>
+            </div>
+
+            <div class="microsoft-edge">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rzE2?ver=aa0b&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+                <h3 class="descr-1">Microsoft Edge</h3>
+                <p class="descr-2">Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+                <p><a href="" class="link-2">Скачать</a></p>
+            </div>
+
+            <div class="micro-onedrive">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hD2k?ver=6539&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+                <h3 class="descr-1">Microsoft OneDrive</h3>
+                <p class="descr-2">Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</p>
+                <p><a href="" class="link-2">Подробнее</a></p>
+            </div>
+
+            <div class="one-note">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/REGxSz?ver=5bf8&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+                <h3 class="descr-1">OneNote</h3>
+                <p class="descr-2">Приведите свои заметки и дела в порядок.</p>
+                <p><a href="" class="link-2">Узнать больше</a></p>
+            </div>
+        </div>
+        
+        <div class="ois-android">
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2OLdz?ver=d01f&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=230&s=1901&d=713&aim=true" class="phones">
+            <h2 class="description-1 description-1-2">Outlook для iOS и Android</h2>
+            <p class="description-2 description-1-3">Будьте на связи. Организовывайте. Успевайте больше.</p>
+            <p><a href="" class="link-1 link-1-2">Скачать</a></p>
+        </div>
+
+        <div class="for-business">
+            <h2>Для бизнеса</h2>
+
+            <div class="teams">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLJ3u?ver=7dcf&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&x=755&y=404&aim=true">
+                <h3 class="descr-1 descr-1-2">Скачайте Microsoft Teams бесплатно</h3>
+                <p class="descr-2">Онлайн-собрания, чат и общее облачное хранилище — все в одном приложении.</p>
+                <p><a href="" class="link-2">Зарегистрироваться бесплатно</a></p>
+            </div>
+
+            <div class="micro365-for-bus">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4E4rT?ver=2072&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+                <h3 class="descr-1 descr-1-2">Microsoft 365 для бизнеса</h3>
+                <p class="descr-2">Опережайте конкурентов с лучшими приложениями для общения, повышения продуктивности и безопасности.</p>
+                <p><a href="" class="link-2">За покупками</a></p>
+            </div>
+
+            <div class="visual-studio">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2OfW4?ver=3149&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+                <h3 class="descr-1 descr-1-2">Скачайте Visual Studio 2019</h3>
+                <p class="descr-2">Скачайте Visual Studio 2019 – эффективную, современную и инновационную IDE.</p>
+                <p><a href="" class="link-2">Скачать</a></p>
+            </div>
+
+            <div class="cloud-pc">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWGaY8?ver=2545&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+                <h3 class="descr-1 descr-1-2">Добро пожаловать в Windows 365 Cloud PC</h3>
+                <p class="descr-2">Работать с Windows в облаке Microsoft теперь можно на любых устройствах.</p>
+                <p><a href="" class="link-2">Попробуйте прямо сейчас</a></p>
+            </div>
+        </div>
+
+        <footer class="footer1">
+
+            <div class="coloumn1">
+                <span> Что нового?</span>
+                <div>
+                    <ul>
+                        <li><a href="">Microsoft 365</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="coloumn2">
+                <span>Microsoft Store</span>
+                <div>
+                    <ul>
+                        <li><a href="">Профиль учетной записи</a></li>
+                        <li><a href="">Возврат товаров</a></li>
+                        <li><a href="">Отслеживание заказа</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="coloumn3">
+                <span>Для образования</span>
+                <div>
+                    <ul>
+                        <li><a href="">Майкрософт и образование</a></li>
+                        <li><a href="">Office для учащихся</a></li>
+                        <li><a href="">Office 365 для школ</a></li>
+                        <li><a href="">Специальные предложения для учащихся и родителей</a></li>
+                        <li><a href="">Microsoft Azure и образование</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="coloumn4">
+                <span>Для бизнеса</span>
+                <div>
+                    <ul>
+                        <li><a href="">Microsoft Azure</a></li>
+                        <li><a href="">Ресурсы для партнеров Microsoft</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="coloumn5">
+                <span>Для разработчиков</span>
+                <div>
+                    <ul>
+                        <li><a href="">Microsoft Visual Studio</a></li>
+                        <li><a href="">Центр разработчиков</a></li>
+                        <li><a href="">Channel 9</a></li>
+                        <li><a href="">Центр разработки Microsoft 365</a></li>
+                        <li><a href="">Программа Microsoft 365 для разработчиков</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="coloumn6">
+                <span>Компания</span>
+                <div>
+                    <ul>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">О корпорации Майкрософт</a></li>
+                        <li><a href="">Инвесторы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="lang"><li><a href="">Русский(Казахстан)</a></li></div>
+        <div class="footer2">
+            <ul>
+                <li><a href="">Связаться с Microsoft</a></li>
+                <li><a href="">Конфиденциальность</a></li>
+                <li><a href="">Условия использования</a></li>
+                <li><a href="">Товарные знаки</a></li>
+                <li><a href="">Сведения о рекламе</a></li>
+                <li><a href="">© Microsoft 2022</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

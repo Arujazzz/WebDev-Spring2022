@@ -1,0 +1,13 @@
+<h1>Vacancies</h1>
+
+<ul>
+    <li *ngFor="let vacancy of vacancies">
+        <p>
+            id: {{vacancy.id}}, name: {{vacancy.name}},
+            description: {{vacancy.description}}, salary: {{vacancy.salary}}
+        </p>
+        <button (click)="remove(vacancy.id)"> Delete</button>
+    </li>
+</ul>
+
+

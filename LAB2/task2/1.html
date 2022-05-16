@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Instagram login page</title>
+
+        <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Arial';
+            font-size: 14px;
+            background-color: #fafafa;
+            text-decoration: none;
+        }
+
+        a{
+            text-decoration: none;          
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        .insta-logo{
+            display: block;
+            width: 210px;
+            margin-top: -50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .facebook-logo{
+            width: 15px;
+        }
+        
+        .apple-logo,.google-logo{
+            width: 150px;
+        }
+        
+        .sign-in{
+            background-color: #ffffff;
+            display: block;
+            position: absolute;
+            width: 350px;
+            padding: 55px 45px;
+            margin-top: -510px;
+            margin-left: 705px;
+            border: 1px solid rgb(200, 200, 200, 200);
+        }
+
+        .sign-up{
+            background-color: #ffffff;
+            position: absolute;
+            width: 350px;
+            padding: 20px 45px;
+            margin-top: -120px;
+            margin-left: 705px;
+            text-align: center;
+            border: 1px solid rgb(200, 200, 200, 200);
+        }
+        .sign-up a{
+            color: #0095f6;
+        }
+        
+        .get-the-app{
+            position: absolute;
+            width: 350px;
+            padding: 5px 45px;
+            text-align: center;
+            margin-left: 705px;
+            margin-top: -50px;
+        }
+
+        .app-store{
+            margin-left: 730px;
+            margin-top: -85px;
+            cursor: pointer;
+        }
+
+        input[type="text"], input[type="password"]{
+            display: block;
+            background-color: #fafafa;
+            color: black;
+            text-align: left;
+            font-family: 'Segoe UI';
+            font-size: 13px;
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            border: 1.5px solid rgb(200, 200, 200);
+            border-radius: 2px;
+        }
+
+        .phones{
+            margin-left: 260px;
+            padding-top: 35px;
+        }
+
+
+        .log-in-button{
+            background-color: #0095f6;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;;
+            border-radius: 2px;
+            color: white;
+            font-size: 13px;
+            width: 100%;
+            padding: 6px;
+            margin-top: 8px;
+            font-family: 'Arial';
+            font-weight: 500;
+            border: none;
+        }
+
+        .or p{
+            color: #8e8e8e;
+            font-weight: 700;
+            position: relative;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 15px;
+            }
+
+        .or::before,.or::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 1.2px;
+            position: absolute;
+            background: rgba(112, 112, 112, 0.4);
+            top: 64.5%;
+        }
+
+        .or::before {
+            left: 50px;
+        }
+
+        .or::after {
+            right: 50px;
+        }
+
+        .login-fb{
+            position: relative;
+            text-align: center;
+            margin-top: 30px;          
+        }
+
+        .login-fb span{
+            color: #385185;
+            font-weight: 700;
+            font-size: 14px;   
+        }
+
+        .forgot-pass{
+            position: relative;
+            display: block;
+            text-align: center;
+           
+            
+        }
+        
+        .forgot-pass span{
+            font-size: 12px;
+            color: #385185;
+        }
+
+        footer {
+            width: 55rem;
+            display: flex;
+            flex-direction: column;
+            margin: 4rem auto 0 auto;
+        }
+
+        .footer-links{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            font-size: 10px;
+        }
+
+        .footer-links li{
+            flex-basis: 9%;
+            text-align: center;
+        }
+
+        .footer-links a, .footer-2{
+            color: #8e8e8e;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 1em auto 0 auto;
+            font-size: 10px;
+        }
+
+        .footer-2 li {
+            text-align: center;
+        }
+
+        .footer-2 li span{
+            cursor: pointer;
+        }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="phones">
+                <img src="images/phones.png"> 
+            </div>
+
+            <div class="login-content">
+                <div class="sign-in">
+                    <img src="images/instagram-logo.png" class="insta-logo">
+                    <form> 
+                        <input type="text" placeholder="Phone number, username or email" />
+                        <input type="password" placeholder="Password" />
+                        <button class="log-in-button">Log In</button>   
+                    </form>
+
+                    <span class="or"><p>OR</p></span>
+                  
+                    <div class="login-fb">
+                        <a href="">
+                        <img src="images/facebook-icon.png" class="facebook-logo">
+                        <span>Log in with Facebook</span>
+                        </a>
+                    </div>  
+                    <a href="" class="forgot-pass">
+                        <span>Forgot password?</span>
+                    </a>
+                </div>  
+           
+
+                <div class="sign-up">
+                    <span>Don't have an account?</span>
+                    <a href="">Sign up</a>
+                </div>
+                <div class="get-the-app"> <p>Get the app.</p></div>
+                    <div class="app-store">
+                        <img src="images/applestore.png" class="apple-logo">
+                        <img src="images/googlestore.png" class="google-logo">
+                    </div>
+            
+            </div>
+        </main>
+
+        <footer>
+            <ul class="footer-links">
+                <li><a href=""> Meta</a> </li>
+                <li><a href="">Blog </a> </li>
+                <li><a href="">Jobs </a> </li>
+                <li><a href="">Help </a> </li>
+                <li><a href=""> API</a> </li>
+                <li><a href="">Privacy</a> </li>
+                <li><a href="">Terms </a> </li>
+                <li><a href=""> Top Accounts</a> </li>
+                <li><a href="">Hashtags </a> </li>
+                <li><a href=""> Locations</a> </li>
+                <li><a href=""> Instagram Lite</a> </li>
+                <li><a href=""> Beauty</a> </li>
+                <li><a href="">Dance </a> </li>
+                <li><a href=""> Fitness</a> </li>
+                <li><a href=""> Food & Drink</a> </li>
+                <li><a href=""> Home & Garden</a> </li>
+                <li><a href="">Music </a> </li>
+                <li><a href="">Visual Arts </a> </li>
+            </ul>
+            <ul class="footer-2">
+                <li><a><span>English</span></a></li>
+                <li>© 2022 Instagram from Meta</li>
+            </ul>
+        </footer>
+    </body>
+</html>

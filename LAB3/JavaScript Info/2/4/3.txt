@@ -1,0 +1,2 @@
+The birthday is known before execution and is directly written into the code. We can use upper case for this.
+Age is estimated at run time. Age is a bit "less constant" than birthday: it's calculated, so we have to keep it lowercase.

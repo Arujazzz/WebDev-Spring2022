@@ -1,0 +1,27 @@
+<div class="main-content">
+  <div *ngIf="!is_logged">
+    
+    <div class="login-form">
+      <h1>Login form</h1>
+
+    <div class="form-group">
+      <p>Username: <input type="text" [(ngModel)]="username"></p>
+    </div>
+
+    <div class="form-group">
+      <p>Password: <input type="password" [(ngModel)]="password"></p>
+    </div>
+
+    <div class="form-group">
+      <button (click)="login()">Login</button>
+    </div>
+    </div>
+
+</div>
+
+<div *ngIf="is_logged">
+    <app-top-bar class="header"></app-top-bar>
+    <li class="logout"><a (click)="logout()" routerLinkActive="active">Logout</a></li>
+    <router-outlet class="main"></router-outlet>
+    <app-footer class="footer"></app-footer>
+</div>
